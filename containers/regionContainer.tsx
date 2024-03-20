@@ -1,14 +1,20 @@
 // Dependencies
 import React from 'react';
-import {Text, View} from 'react-native';
+import {ScrollView} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+
+// Components
+import OtherRegions from '../components/OtherRegions';
+
+// Styles
+import commonStyles from '../styles/commonStyles';
 
 const RegionContainer: React.FC = () => {
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <View>
-        <Text>Regions screen</Text>
-      </View>
+    <SafeAreaView style={commonStyles.fillAvailableSpace}>
+      <ScrollView>
+        <OtherRegions />
+      </ScrollView>
     </SafeAreaView>
   );
 };

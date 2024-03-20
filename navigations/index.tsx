@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unstable-nested-components */
 // Dependencies
 import React from 'react';
 import {ColorSchemeName, useColorScheme} from 'react-native';
